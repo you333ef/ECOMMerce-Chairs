@@ -1,0 +1,70 @@
+[{
+    "name": "Comfort Handy Craft",
+    "image": "./PART3/ONE.svg",
+    "saleImage": "./PART3/Group 27.svg",
+    "price": 42,
+    "oldPrice": 65
+
+},{
+
+    "name": "Handy Craft",
+    "image": "./PART3/image 15.svg",
+    "saleImage": "./PART3/Group 27.svg",
+    "price": 43,
+    "oldPrice": 65
+
+
+},{
+    "name": "Handy Craft",
+    "image": "./PART3/THREE.svg",
+    "saleImage": "./PART3/Group 27.svg",
+    "price": 43,
+    "oldPrice": 65
+
+
+
+
+},{
+
+    "name": "Handy Craft",
+    "image": "./PART3/FOUR.svg",
+    "saleImage": "./PART3/Group 27.svg",
+    "price": 22,
+    "oldPrice": 65
+
+
+
+},{
+    "name": "Chair Craft",
+    "image": "./PART3/FIVE.svg",
+    "saleImage": "./PART3/Group 27.svg",
+    "price": 22,
+    "oldPrice": 65
+
+
+
+
+
+},{
+
+
+    "name": "Chair Craft",
+    "image": "./PART3/image 31.svg",
+    "saleImage": "./PART3/Group 27.svg",
+    "price": 22,
+    "oldPrice": 65
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+]
