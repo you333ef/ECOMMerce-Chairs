@@ -967,7 +967,9 @@ min-height: 500px;
     position: relative;
     z-index: 2;
   }
-  
+  .card-body{
+    background-color:#FFFFFF !important;
+  }
   /* جعل الخلفية تتأقلم مع الشاشات */
   @media (max-width: 768px) {
     .newsletter-section {
@@ -1000,8 +1002,250 @@ background: #FB2E86;
 
 
   }
+  @media (min-width: 770px) and (max-width: 990px){
+    .card,.card,.card{
+        height: 460px !important;
+      }
+     
+
+
+
+
+  }
+  @media (max-width: 770px){
+    .card,.card,.card{
+        height:550px !important;
+      }
+      /* #blog-1,#blog-2,#blog-3{
+        height: 140px !important;
+
+      } */
+
+
+
+
+  }
+  
+  @media (min-width: 990px){
+    .card,.card,.card{
+        height:450px !important;
+    
+      }
+      #blog-1,#blog-2,#blog-3{
+      
+        
+
+      } 
+      
+
+     
+
+
+
+  }
   
       
   
+  .card,.card,.card{
+  
+  }
+  #blog-1,#blog-2,#blog-3{
+  
+    
+
+  } 
+  .card-body{
+
+  }
+
+ 
       
-      
+ #BOM{
+   color: #151875 !important;
+ }
+ #BOM i{
+    color:#FB2E86 !important;
+ }
+.card-text{
+color: #72718F !important;
+}
+ 
+.POC{
+    color:#FB2E86 !important;
+ }
+ .DOC{
+    color:#151875 !important;
+    border-bottom: 1px solid #151875;
+ }
+ #TOPP{
+    color:#FB2E86 !important;
+ }
+ /* لإعداد التوسيط في .image-container */
+.image-container {
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center; /* توسيط عمودي */
+    height: auto; /* جعل الحاوية تمتد لطول الشاشة */
+    margin-top: 30px;
+  }
+  
+  .image-container img {
+    max-width: 100%; /* التحكم في حجم الصورة بحيث ما تتعداش حجم الشاشة */
+    height: auto;
+  }
+  /*  */
+  .footer-heading {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  footer a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: #ff007f;
+  }
+
+  .btn-pink {
+    background-color: #ff007f;
+    color: #fff;
+  }
+
+  .btn-pink:hover {
+    background-color: #e60073;
+  }
+
+  @media (max-width: 768px) {
+    .footer-heading {
+      text-align: center;
+    
+    }
+
+    footer .input-group {
+      justify-content: center;
+    }
+
+    .text-center {
+      padding-top: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    footer .row > div {
+      text-align: center;
+    }
+
+  }
+
+/* Footer section logos */
+
+
+@media (max-width: 768px) {
+    footer img {
+        max-height: 40px;
+    }
+}
+body{
+    background-color: #fff;
+}
+/* Responsive footer for smaller screens */
+.footer-logo {
+    height: 50px;
+    transition: 0.3s;
+}
+
+@media (max-width: 1024px) {
+    .footer-logo {
+        height: 40px;
+    }
+    #KOL{
+        margin: auto !important;
+        text-align: center !important;
+        justify-content: center !important;
+       
+    }
+}
+
+
+#footer-logo{
+    width: 100% !important;
+    height: 100px !important;
+}
+#head {
+    background-color: #F6F5FF;
+   height: 100px;
+   
+
+
+}
+#secttiion{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;}
+#ul{
+    display: flex;
+    flex-direction: row;
+  gap: 10px;
+
+ 
+   letter-spacing: 0.5px;
+
+}
+#ul li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+
+
+}
+#Account{
+    font-size: 17px;
+    font-weight: 700;
+}
+#My
+{
+    color:#FB2E86;
+
+}
+#SignN{
+    background-color:#FB2E86;
+
+}
+#Up{
+    background-color:#FB2E86;
+}
+footer{
+    background-color: #F6F5FF;
+}
+#Login{
+    font-size: 25px;
+    font-weight: 700;
+}
+#Please{
+    font-size: 16px;
+    font-weight: 700;
+}
+.form-label{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        /* CSS styles for medium screens */
+        .WESO{
+            display: none !important;
+        }
+        #SER{
+            display: none;
+        }
+        
+        
+    }
+    #FIX{
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }    
+  

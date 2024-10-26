@@ -2,6 +2,7 @@
 .top-bar {
     background-color: #7E33E0; /* Purple background */
     font-size: 14px;
+    width: 100% !important;
 }
 
 /* Navbar brand */
