@@ -138,6 +138,9 @@ header {
     .content-areaaa {
         background-image: none;
     }
+    header{
+ margin-top: -80px;
+    }
 
     #chair-div {
         display: flex;
@@ -1334,116 +1337,92 @@ footer{
   /*  */
   /*  */
   /* ضبط الـ Container */
-.trending-products {
+/* تخصيص الـ CSS للسكشن الجديد */
+.trending-section {
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
   
-  /* تنسيق البطاقات */
-  .card {
+  /* البطاقات داخل سكشن التريندنج */
+  .trending-section .card {
     border: none;
     background-color: #f9f9f9;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
   
-  .card:hover {
+  .trending-section .card:hover {
     transform: translateY(-5px);
   }
   
-  /* تنسيق الصور داخل البطاقات */
-  .card img {
+  /* الصور داخل سكشن التريندنج */
+  .trending-section .card img {
     width: 100%;
     height: auto;
-    max-width: 200px; /* أو يمكنك تحديد الحجم المناسب */
+    max-width: 200px;
     margin-bottom: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   
-  /* محاذاة الـ text */
-  .card-title {
+  /* العناوين */
+  .trending-section .card-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  .card-text {
+  /* السعر */
+  .trending-section .card-text {
     font-size: 16px;
     color: #333;
   }
   
-  #SHQULP p {
+  /* السعر المخفض */
+  .trending-section .price p {
     margin: 0;
     font-size: 14px;
     color: #888;
     text-decoration: line-through;
   }
   
-  /* سعر المنتج بعد التخفيض */
-  .card-text {
+  .trending-section .card-text {
     color: #ff5733;
     font-weight: bold;
   }
   
-  /* الميديا كويري للشاشات الصغيرة */
+  /* ميديا كويري للشاشات الصغيرة */
   @media (max-width: 570px) {
-    .trending-products {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-  
-    .card img {
-      max-width: 150px; /* تقليل حجم الصورة للشاشات الأصغر */
-    }
-  
-    .card-title {
-      font-size: 16px;
-    }
-  
-    .card-text {
-      font-size: 14px;
-    }
-  }
-/* حل مشكلة الفراغ الجانبي في الشاشات الصغيرة */
-@media (max-width: 570px) {
-    .row {
+    .trending-section .row {
       margin-left: 0;
       margin-right: 0;
     }
   
-    .col-6 {
+    .trending-section .col-6 {
       padding-left: 5px;
       padding-right: 5px;
     }
   
-    /* التأكد من أن الصور لا تتجاوز عرض الشاشة */
-    .card img {
+    .trending-section .card img {
       width: 100%;
       height: auto;
-      max-width: 150px; /* تعديل max-width لتتناسب مع الشاشات الصغيرة */
+      max-width: 150px;
     }
   
-    /* التأكد من ملء العمود كامل الشاشة في الشاشات الصغيرة */
-    .col-6 {
+    .trending-section .col-6 {
       flex: 0 0 50%;
       max-width: 50%;
     }
   
-    /* تقليل الهوامش على الشاشات الصغيرة */
-    .card {
+    .trending-section .card {
       margin-bottom: 15px;
     }
   
-    .trending-products {
+    .trending-section {
       padding-left: 10px;
       padding-right: 10px;
     }
   }
-    
-    
