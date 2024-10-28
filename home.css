@@ -138,9 +138,7 @@ header {
     .content-areaaa {
         background-image: none;
     }
-    header{
- margin-top: -80px;
-    }
+  
 
     #chair-div {
         display: flex;
@@ -180,6 +178,7 @@ header {
         width: 100%;
         background-size: cover;
     }
+   
 }
 /*  */
 
@@ -230,6 +229,43 @@ font-weight: 700;
   font-weight: 700;
     
 }
+header {
+    background-color: #F2F0FF;
+    height: auto;
+    width: 100%;
+    margin-top: 0; /* شيل الـ margin أو عدله */
+    padding: 20px 0; /* أضف padding هنا عشان الفرق يكون أقل */
+}
+
+@media (max-width: 992px) {
+    #chair-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 10px; /* أضف padding هنا لتقليل الفرق */
+    }
+
+    #img-sec img {
+        width: 90%; /* تأكد من إن الصورة مظبوطة */
+        max-width: 100%; /* خليك متأكد إنها تفضل في الإطار */
+        height: auto; /* خليه يتناسب مع العرض */
+    }
+}
+
+@media (max-width: 570px) {
+    #chair-div {
+        order: 2; /* ترتيب العناصر هنا ممكن يبقى زي ما هو */
+        padding: 10px; /* أضف padding لتقليل الفراغ */
+    }
+
+    #img-sec {
+        order: 1; /* ترتيب العناصر هنا ممكن يبقى زي ما هو */
+        padding: 10px; /* أضف padding لتقليل الفراغ */
+    }
+}
+
 .details-part h5{
     font-size: 19px;
     font-weight: 600;
@@ -782,8 +818,8 @@ border-bottom: 1px #FB2E86 solid;
       }
       
       .discount-section img {
-     width: 100%;
-        border-radius: 50%;
+     width: 80% !important;
+        border-radius: 50% !important;
       }
       
       /* Media Query للتحكم في ترتيب العناصر في الشاشات الصغيرة والمتوسطة */
@@ -806,7 +842,12 @@ border-bottom: 1px #FB2E86 solid;
           text-align: center;
         }
       }
-      
+      @media(max-width:440px){
+        .LINKS{
+            display: none;
+        }
+
+      }
       /* تنسيق إضافي للزر */
       .btn-pink {
         background-color: #ff007f;
@@ -847,7 +888,9 @@ border-bottom: 1px #FB2E86 solid;
 
 
      }
-      
+     #ZPT{
+        height: 250px !important;
+     }
      .btn-pink {
         background-color: #FB2E86;
         color: white;
@@ -1006,7 +1049,7 @@ background: #FB2E86;
 
   }
   @media (min-width: 770px) and (max-width: 990px){
-    .card,.card,.card{
+    .carde,.carde,.carde{
         height: 460px !important;
       }
      
@@ -1016,7 +1059,7 @@ background: #FB2E86;
 
   }
   @media (max-width: 770px){
-    .card,.card,.card{
+    .carde,.carde,.carde{
         height:550px !important;
       }
       /* #blog-1,#blog-2,#blog-3{
@@ -1426,3 +1469,234 @@ footer{
       padding-right: 10px;
     }
   }
+  .UNIQQQ {
+    max-width: 80%; /* تحدد الحد الأقصى لحجم الصورة */
+    height: auto; /* يحافظ على نسبة العرض إلى الارتفاع */
+}
+
+
+
+@media (max-width: 590px) {
+    #APOLO {
+        flex-direction: column; /* تغير إلى عمود على الشاشات الصغيرة */
+        text-align: center !important; /* توسيط النصوص */
+    }
+    .Features{
+        font-weight: 600;
+        letter-spacing: 0px;
+        font-size: 21px;
+        
+    }
+}
+
+@media (min-width: 590px) and (max-width: 790px) {
+    .col-sm-10 {
+        margin-left: auto; /* توسيع الهوامش من اليسار */
+        margin-right: auto; /* توسيع الهوامش من اليمين */
+    }
+    #APOLO {
+        display: flex !important; /* استخدام flexbox للتوسيط */
+        justify-content: center !important; /* للتوسيط الأفقي */
+        align-items: center !important; /* للتوسيط العمودي */
+        flex-direction: row !important; /* تأكد من أن العناصر في صف */
+        margin: 0 auto !important; /* اتأكد من أن الهوامش متساوية */
+    }
+    #APOLO {
+        flex-direction: column !important; /* تغير إلى عمود على الشاشات الصغيرة */
+        text-align: center !important; /* توسيط النصوص */
+    }
+}
+.card {
+    border: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* تنسيق الصور داخل البطاقات */
+.card img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* أو يمكنك تحديد الحجم المناسب */
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* محاذاة الـ text */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #333;
+}
+
+#SHQULP p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+/* سعر المنتج بعد التخفيض */
+.card-text {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+/* الميديا كويري للشاشات الصغيرة */
+@media (max-width: 570px) {
+    .trending-products {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .card img {
+        max-width: 150px; /* تقليل حجم الصورة للشاشات الأصغر */
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+}
+
+/* تخصيص الـ CSS للسكشن الجديد */
+.trending-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* البطاقات داخل سكشن التريندنج */
+.trending-section .card {
+    border: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.trending-section .card:hover {
+    transform: translateY(-5px);
+}
+
+/* الصور داخل سكشن التريندنج */
+.trending-section .card img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* العناوين */
+.trending-section .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* السعر */
+.trending-section .card-text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* السعر المخفض */
+.trending-section .price p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.trending-section .card-text {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+/* ميديا كويري للشاشات الصغيرة */
+@media (max-width: 570px) {
+    .trending-section .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .trending-section .col-6 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .trending-section .card img {
+        width: 100%;
+        height: auto;
+        max-width: 150px;
+    }
+
+    .trending-section .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .trending-section .card {
+        margin-bottom: 15px;
+    }
+
+    .trending-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.trending-products{
+    height: auto;
+}
+.short-div .card {
+    height: 300px !important; /* يمكنك تغيير القيمة حسب احتياجك */
+    overflow: hidden; /* هذا يمنع ظهور المحتوى الزائد */
+}
+
+.short-div img {
+    max-height: 180px; /* يمكنك تغيير القيمة حسب احتياجك */
+    object-fit: cover; /* يحافظ على نسبة الأبعاد للصورة */
+}
+@media(min-width:769px) and (max-width:990px){
+    #img-sec .chair{
+        width: 65% !important;
+       
+        
+    }
+
+}@media(min-width:990px) {
+    #img-sec .chair{
+        width: 80% !important;
+        margin-top: 20px;
+       
+        
+    }
+
+}
+#ITOP{
+    color: #fff;
+    background-color: #FB2E86;
+    font-weight: 500;
+}
+#SANATAO{
+    align-items: center !important;
+}
