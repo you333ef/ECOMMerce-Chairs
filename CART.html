@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./COKK.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>CART..</title>
+</head>
+<body>
+    <!-- Top Bar with contact information -->
+    <div class="top-bar text-white" id="FIX">
+        <div class="container d-flex" id="RR">
+            <div><i class="fas fa-phone"></i> +1117254520</div>
+            <div class="row" id="RR">
+                <div class="LL"><i class="fa-regular fa-user"></i> Login</div>
+                <div class="LL"><i class="fa-regular fa-heart"></i> Wish List</div>
+                <div class="LL"><i class="fa-solid fa-cart-shopping" id="CArtIcon" style="cursor: pointer;"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand font-weight-bold" href="./main.html" id="HektoTYTLE">Hekto</a>
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links and Search bar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-pink text-center" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Search Form -->
+                <form class="form-inline ml-3 text-center" id="SER">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" id="Search" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header Section -->
+    <header id="head" class="mt-2 p-1">
+        <div class="container">
+            <h4 id="Account">My Account</h4>
+        </div>
+        <ul id="ul" class="container">
+            <li>Home.</li>
+            <li>Pages.</li>
+            <li id="My">Shopping Cart</li>
+        </ul>
+    </header>
+   
+    <!-- Shopping Cart Section -->
+     <div class="container my-5" id="SOSTA"></div>
+    <div class="container my-5" id="NONA">
+        <div class="row">
+            <!-- Product List Section -->
+            <div class="col-lg-8">
+                <table class="table  cart-table">
+                    <thead>
+                        <tr id="HODA">
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="JOOCART" >
+                        <!-- سيتم تعبئة المنتجات ديناميكيًا هنا باستخدام JavaScript -->
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-between text-center align-middle" >
+                    <button class="btn updateCart" id="updateCart">Update Cart</button>
+                    <button class="btn  updateCart" id="clearCart" onclick="DELETEALL()">Clear Cart</button>
+                </div>
+            </div>
+
+            <!-- Cart Totals Section -->
+            <div class="col-lg-4">
+                <div class="cart-summary mb-3">
+                    <h5 class="text-center d-block" id="TOTAL_SEC">Cart Totals</h5>
+                    <hr>
+                    <p class="d-flex justify-content-between">
+                        <span id="FZT">Subtotal:</span>
+                            <span id="total">£0.00</span>
+                        <hr>
+                        <p class="d-flex justify-content-around">
+                            <span id="FZT">Total:</span>
+                            <span id="totalsub">£0.00</span>
+                        </p>
+                        <hr>
+                        <span id="subtotal" class="text-center d-block FZT">Shipping & taxes calculated at checkout</span>
+                    </p>
+                    <button class="btn  w-100" id="Checkout">Proceed To Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Signup -->
+                <div class="col-lg-3 col-sm-12 col-md-6 mb-4 WESO" id="KOL">
+                    <h4 id="HektoFooter">Hekto</h4>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter Email Address">
+                        <div class="input-group-append">
+                            <button class="btn " type="button" id="Up">Sign Up</button>
+                        </div>
+                    </div>
+                    <p>Contact Info</p>
+                    <address>17 Princess Road, London, Greater London NW1 8JR, UK</address>
+                </div>
+                <!-- Categories -->
+                <div class="col-lg-3 col-sm-12 col-md-6 mb-4" id="KOL">
+                    <h5 id="HektoFooter">Categorgies</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Laptops & Computers</a></li>
+                        <li><a href="#">Cameras & Photography</a></li>
+                        <li><a href="#">Smart Phones & Tablets</a></li>
+                        <li><a href="#">Video Games & Consoles</a></li>
+                        <li><a href="#">Waterproof Headphones</a></li>
+                    </ul>
+                </div>
+                <!-- Customer Care -->
+                <div class="col-lg-3 col-sm-12 col-md-6 mb-4" id="KOL">
+                    <h5 id="HektoFooter">Customer Care</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Discount</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Orders History</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                    </ul>
+                </div>
+                <!-- Pages -->
+                <div class="col-lg-3 col-md-12  col-sm-6 mb-4" id="KOL">
+                    <h5 id="HektoFooter">Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Browse the Shop</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Pre-Built Pages</a></li>
+                        <li><a href="#">Visual Composer Elements</a></li>
+                        <li><a href="#">WooCommerce Pages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy;Webey - All Rights Reserved</p>
+                <!-- Social Media Icons -->
+                <a href="#" class="mr-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Bootstrap and Cart functionality -->
+     
+    <script src="./bootstrap-4.0.0-dist (1)/js/jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap-4.0.0-dist (1)/js/popper.min.js"></script>
+    <script src="./bootstrap-4.0.0-dist (1)/js/bootstrap.js"></script>
+    <script src="./cart.js"></script>
+    
+</body>
+</html>

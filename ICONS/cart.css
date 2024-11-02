@@ -1,0 +1,29 @@
+body {
+    background-color: #f9f9f9;
+}
+
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+table td p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.btn-primary, .btn-danger, .btn-success {
+    width: 150px;
+}
+
+@media (max-width: 992px) {
+    .table {
+        font-size: 0.9rem;
+    }
+}

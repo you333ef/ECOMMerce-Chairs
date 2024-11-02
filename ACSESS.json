@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Backpack",
+        "price": 30.00,
+        "image": "./DESIGN/New folder/p0OlRAAYXLY (1).svg",
+        "alt": "Mini LCW Chair"
+    },
+    {
+        "id": 2,
+        "name": "Action Camera",
+        "price": 22.00,
+        "image": "./DESIGN/New folder/p0OlRAAYXLY (2).svg",
+        "alt": "Mini LCW Chair"
+    },
+    {
+        "id": 3,
+        "name": "Headphone",
+        "price": 12.00,
+        "image": "./DESIGN/New folder/p0OlRAAYXLY (3).svg",
+        "alt": "Mini LCW Chair"
+    },
+    {
+        "id": 4,
+        "name": "Digital Watch",
+        "price": 10.00,
+        "image": "./DESIGN/New folder/p0OlRAAYXLY (4).svg",
+        "alt": "Mini LCW Chair"
+    },
+    {
+        "id": 5,
+        "name": "Digital Watch",
+        "price": 110.0,
+        "image": "./DESIGN/New folder/Rectangle 144.svg",
+        "alt": "Mini LCW Chair"
+    },
+    {
+        "id": 6,
+        "name": "Digital Watch",
+        "price": 60.0,
+        "image": "./DESIGN/New folder/Rectangle 145.svg",
+        "alt": "Mini LCW Chair"
+    },
+    {
+        "id": 7,
+        "name": "Digital Watch",
+        "price": 53.0,
+        "image": "./DESIGN/New folder/Rectangle 147.svg",
+        "alt": "Mini LCW Chair"
+    },
+    {
+        "id": 8,
+        "name": "Digital Watch",
+        "price": 56.00,
+        "image": "./DESIGN/New folder/Rectangle 34.svg",
+        "alt": "Mini LCW Chair"
+    }
+]

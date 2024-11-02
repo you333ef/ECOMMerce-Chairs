@@ -1,0 +1,33 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Cantilever1",
+        "image": "./part2/image 1.svg",
+        "code": "Y523201",
+        "price": "42.00"
+      },
+      {
+        "id": 2,
+        "name": "Cantilever2",
+        "image": "./part2/image 3.svg",
+        "code": "Y52J202",
+        "price": "43.00"
+      },
+      {
+        "id": 3,
+        "name": "Cantilever3",
+        "image": "./part2/image 1169.svg",
+        "code": "Y523Z203",
+        "price": "44.00"
+      },
+      {
+        "id": 4,
+        "name": "Cantilever4",
+        "image": "./part2/image 1168.png",
+        "code": "Y523E204",
+        "price": "45.00"
+      }
+    ]
+  }
+  

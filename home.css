@@ -1700,3 +1700,31 @@ footer{
 #SANATAO{
     align-items: center !important;
 }
+.swiper-pagination {
+  
+}
+.swiper-pagination-bullet-active {
+    background-color:#FB2E86 !important; /* عدّل اللون اللي يناسبك */
+
+}
+.swiper-pagination {
+ 
+ display: none;
+}
+#VIVO{
+    background-color: #000 !important;color: #fff !important;font-weight: 700 !important;
+}
+.swiper-slide h5{
+    color: #151875;
+    font-weight: 700;
+
+}
+.swiper-slide p{
+    color: #000;
+    font-weight: 700;
+
+}
+.TOOME{
+    display: flex;
+    flex-direction: column;
+}
