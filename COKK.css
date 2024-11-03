@@ -579,3 +579,70 @@ transition-property: 0;
     color: #fff !important;
     font-weight: 700 !important;
 }
+#inner{
+    font-weight: 700 !important;
+   font-size: 13px;
+}
+/*  */
+/* ضبط العرض وتوحيد الحواف */
+#SOSTA, #NONA {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* تنسيق للجدول والخطوط */
+#NONA .cart-table th, 
+#NONA .cart-table td {
+    font-size: 14px; /* حجم خط مناسب للشاشات الصغيرة */
+    padding: 10px;
+    text-align: center;
+}
+
+#TOTAL_SEC, #FZT, #subtotal {
+    font-size: 14px; /* حجم الخط يتناسب مع الشاشات الصغيرة */
+}
+
+/* توسيط العناصر في الجزء الخاص بـ Totals */
+.cart-summary {
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* لاظهار حواف خفيفة */
+}
+
+/* زر Proceed to Checkout بتنسيق مناسب للشاشات الصغيرة */
+#Checkout {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #e60073; /* لون زاهي */
+    color: #fff;
+    border: none;
+}
+
+/* ضبط الأزرار */
+.updateCart {
+    font-size: 14px;
+    padding: 8px 15px;
+    margin: 5px;
+    background-color:  #e60073;
+    color: #fff;
+    border: none;
+}
+
+@media (max-width: 576px) {
+    /* عند العرض على شاشات صغيرة جداً */
+    #NONA .col-lg-8, 
+    #NONA .col-lg-4 {
+        width: 100%;
+        padding: 0;
+    }
+#delete{
+    width: 3%;
+    height: auto;
+}
+    /* محاذاة العناصر بشكل طولي */
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}

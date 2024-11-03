@@ -1728,3 +1728,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
+#inner{
+    font-weight: 700 !important;
+   font-size: 13px;
+}

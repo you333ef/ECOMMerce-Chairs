@@ -1,6 +1,12 @@
 // Wait for the DOM to fully load
+
 document.addEventListener('DOMContentLoaded', function () {
-    
+     function YALLA(){
+        let inner = document.getElementById('inner');
+        inner.innerHTML = ARRAY.length; 
+     }
+     YALLA()
+   
   // Fetch and display latest products from products.json
   fetch('./products.json')
       .then(function (pro) {
@@ -27,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>
                                 </div>
                                 <div class="TEXT-SEC m-2">
-                                <h6 class="HOP">Comfort Handy Craft</h6>
+                                <h6 class="HOP">${DATA[i].name}${i+1}</h6>
                                 <div class="FFT">
                               <h6>$${DATA[i].price}</h6>
                               <h6 id="AfterDescound"></h6>
@@ -38,15 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
               rowLeatest.innerHTML += COCO;
           
           }
-         
-
-
-    
-
-
-
-
-
           // Product filters for Best, All, and Special categories
           let products = document.querySelectorAll('.itemssss');
           let All = document.getElementById('New');
@@ -93,6 +90,11 @@ document.addEventListener('DOMContentLoaded', function () {
          
       });
 });
+function YALLA(){
+    let inner = document.getElementById('inner');
+    inner.innerHTML = ARRAY.length; 
+ }
+
 function FUN(element) {
     const itemData = JSON.parse(element.getAttribute('data-item'));
    let OBJO={
@@ -102,9 +104,37 @@ function FUN(element) {
   
   
    }
-   ARRAY.push(OBJO)
-   LOCALSTORAGE()
+   
+
+   Swal.fire({
+    title: ' The product will be added to the shopping cart🛒.',
+    text: 'Are you sure?' ,
+    icon: 'success',
+    showCancelButton: true,
+    confirmButtonText: 'Yes',
+    cancelButtonText: 'No',
+    confirmButtonColor: '7E33E0',
+    cancelButtonColor: '#FB2E86',
+    background: '#F2F0FF'
+}).then((result) => {
+    if (result.isConfirmed) {
+        ARRAY.push(OBJO)
+        YALLA()
+        LOCALSTORAGE()
+    }
+});
+
+
+
+
+
+
+
+ 
   
+ 
+
+
   
   }
 
@@ -289,6 +319,11 @@ fetch('./FATURED.json')
      
 
   });
+  function YALLA(){
+    let inner = document.getElementById('inner');
+    inner.innerHTML = ARRAY.length; 
+ }
+
 
  function ITI(BIG){
 let OBJ={
@@ -298,8 +333,33 @@ let OBJ={
   price:BIG.price
 
 }
-ARRAY.push(OBJ)
+
+Swal.fire({
+    title: ' The product will be added to the shopping cart🛒.',
+    text: 'Are you sure?' ,
+    icon: 'success',
+    showCancelButton: true,
+    confirmButtonText: 'Yes',
+    cancelButtonText: 'No',
+    confirmButtonColor: '7E33E0',
+    cancelButtonColor: '#FB2E86',
+    background: '#F2F0FF'
+}).then((result) => {
+    if (result.isConfirmed) {
+       
+        ARRAY.push(OBJ)
+        YALLA()
 LOCALSTORAGE()
+    }
+});
+
+
+
+
+
+
+
+
  }
  function LOCALSTORAGE(){
   window.localStorage.setItem('DATA',JSON.stringify(ARRAY))
@@ -506,7 +566,10 @@ fetch('./ACSESS.json')
       wrapper.innerHTML = TOTo;
      
   });
-
+  function YALLA(){
+    let inner = document.getElementById('inner');
+    inner.innerHTML = ARRAY.length; 
+ }
   function PUSHHHEND(request){
    let JOJO={
     img:request.image,
@@ -514,8 +577,32 @@ fetch('./ACSESS.json')
     name:request.name,
 
    }
-   ARRAY.push(JOJO)
-   LOCALSTORAGE()
+
+
+
+   Swal.fire({
+    title: ' The product will be added to the shopping cart🛒.',
+    text: 'Are you sure?' ,
+    icon: 'success',
+    showCancelButton: true,
+    confirmButtonText: 'Yes',
+    cancelButtonText: 'No',
+    confirmButtonColor: '7E33E0',
+    cancelButtonColor: '#FB2E86',
+    background: '#F2F0FF'
+}).then((result) => {
+    if (result.isConfirmed) {
+       
+        ARRAY.push(JOJO)
+        YALLA()
+        LOCALSTORAGE()
+    }
+});
+
+
+
+
+  
 
         
   }
@@ -524,3 +611,23 @@ fetch('./ACSESS.json')
   CArtIcon.onclick=function(){
     location.href='./CART.html'
   }
+//  SWEET ALERT
+document.getElementById('Logout').addEventListener('click', function () {
+    Swal.fire({
+        title: 'Do you really want to log out?',
+        text: 'Are you sure?' ,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No',
+        confirmButtonColor: '7E33E0',
+        cancelButtonColor: '#FB2E86',
+        background: '#F2F0FF'
+    }).then((result) => {
+        if (result.isConfirmed) {
+           
+            window.location.href = './Fast.html'; 
+        }
+    });
+});
+

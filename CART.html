@@ -17,9 +17,10 @@
         <div class="container d-flex" id="RR">
             <div><i class="fas fa-phone"></i> +1117254520</div>
             <div class="row" id="RR">
-                <div class="LL"><i class="fa-regular fa-user"></i> Login</div>
-                <div class="LL"><i class="fa-regular fa-heart"></i> Wish List</div>
-                <div class="LL"><i class="fa-solid fa-cart-shopping" id="CArtIcon" style="cursor: pointer;"></i></div>
+                <div class="LL" id="Logout"><i class="fa-regular fa-user"></i> Login</div>
+          
+                <div class="LL"><i class="fa-solid fa-cart-shopping" id="CArtIcon" style="cursor: pointer;"> <small id="inner"></small></i></div>
+                
             </div>
         </div>
     </div>
@@ -94,7 +95,7 @@
                         <!-- سيتم تعبئة المنتجات ديناميكيًا هنا باستخدام JavaScript -->
                     </tbody>
                 </table>
-                <div class="d-flex justify-content-between text-center align-middle" >
+                <div class="d-flex justify-content-between text-center align-middle" style="flex-direction: row;margin: 2px;" >
                     <button class="btn updateCart" id="updateCart">Update Cart</button>
                     <button class="btn  updateCart" id="clearCart" onclick="DELETEALL()">Clear Cart</button>
                 </div>
@@ -188,6 +189,7 @@
     <script src="./bootstrap-4.0.0-dist (1)/js/jquery-3.7.1.min.js"></script>
     <script src="./bootstrap-4.0.0-dist (1)/js/popper.min.js"></script>
     <script src="./bootstrap-4.0.0-dist (1)/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./cart.js"></script>
     
 </body>

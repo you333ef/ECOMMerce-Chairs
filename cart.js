@@ -17,8 +17,14 @@ function TOTALALL(){
   
 }
 
+ 
 window.onload = function() {
     let ARRAY = JSON.parse(localStorage.getItem('DATA')) || [];
+    function YALLA(){
+        let inner = document.getElementById('inner');
+        inner.innerHTML = ARRAY.length; 
+     }
+     YALLA()
     if (ARRAY.length === 0) {
         document.getElementById('NONA').style.display = 'none';
         document.getElementById('SOSTA').innerHTML += `
@@ -32,6 +38,7 @@ window.onload = function() {
     } 
     // إظهار NONA عند وجود عناصر في ARRAY
     else if (ARRAY.length > 0) {
+      
         document.getElementById('SOSTA').style.display = 'none';
         document.getElementById('NONA').style.display = 'block';
     }
@@ -46,7 +53,7 @@ window.onload = function() {
         <tbody>
             <tr class=" align-items-center">
                 <td class="d-flex align-items-center">
-                    <img src="${ARRAY[i].img}" alt="" style="width: 80px; height: 80px; object-fit: cover; margin-right: 10px;">
+                    <img src="${ARRAY[i].img}" alt="OOP" style="width: 80px; height: 80px; object-fit: cover; margin-right: 10px;">
                     <img src="./PART3/Group 43.svg" alt="OO" onclick='DEL(${i})' id='delete'>
                     <div>
                         <p class="mb-1"><strong id="NAME">${ARRAY[i].name}</strong></p>
@@ -86,6 +93,7 @@ window.onload = function() {
     }
 
     CARTHTML.innerHTML = TET
+  
     TOTALALL()
    
   
@@ -138,7 +146,6 @@ function DECREMENT(DIs, price) {
 
 
 
-
 let HektoTYTLE=document.getElementById('HektoTYTLE')
   HektoTYTLE.onclick=function(){
    location.href='./main.html'
@@ -161,6 +168,41 @@ function DELETEALL(){
 
 }
 
-document.getElementById('Checkout').onclick=function(){
-    window.location.href='./SUCCESS.html'
-}
+
+document.getElementById('Checkout').addEventListener('click', function () {
+    Swal.fire({
+        title: 'Do you want to confirm the purchase?',
+        text: 'Are you sure?' ,
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No',
+        confirmButtonColor: '7E33E0',
+        cancelButtonColor: '#FB2E86',
+        background: '#F2F0FF'
+    }).then((result) => {
+        if (result.isConfirmed) {
+           
+            window.location.href = './SUCCESS.html'; 
+        }
+    });
+});
+document.getElementById('Logout').addEventListener('click', function () {
+    Swal.fire({
+        title: 'Do you really want to log out?',
+        text: 'Are you sure?' ,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No',
+        confirmButtonColor: '7E33E0',
+        cancelButtonColor: '#FB2E86',
+        background: '#F2F0FF'
+    }).then((result) => {
+        if (result.isConfirmed) {
+           
+            window.location.href = './Fast.html'; 
+        }
+    });
+});
+
