@@ -1732,3 +1732,18 @@ footer{
     font-weight: 700 !important;
    font-size: 13px;
 }
+@media(max-width:769px){
+    #offerONE{
+        width: fit-content !important;
+    }
+    #offerTWO{
+        width: fit-content !important;
+    }
+    #Offer_1,#Offer-2{
+        
+    }
+
+
+
+
+}
