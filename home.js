@@ -133,9 +133,7 @@ function FUN(element) {
 
   
   }
-
-// Initialize Swiper for product carousels on page load
-window.onload = function () {
+  window.onload = function () {
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -143,21 +141,29 @@ window.onload = function () {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+            dynamicBullets: true,
         },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        lazy: true, // تفعيل تحميل الصور الكسول
+        autoplay: {
+            delay: 1000, // المدة الزمنية بين كل انتقال (بالمللي ثانية)، يمكنك تغييرها حسب رغبتك
+            disableOnInteraction: false, // يستمر في التقليب حتى إذا تم التفاعل معه
+        },
+        lazy: true,
         breakpoints: {
             576: { slidesPerView: 2, spaceBetween: 10 },
             768: { slidesPerView: 2, spaceBetween: 20 },
             1024: { slidesPerView: 4, spaceBetween: 30 },
         },
+        on: {
+            resize: function () {
+                swiper.update(); // تحديث الـ Swiper عند تغيير حجم الشاشة
+            }
+        }
     });
-    
 };
-
 
 
 
@@ -296,7 +302,7 @@ fetch('./FATURED.json')
                   <div class="img-part">
                       <img src="${DATAFATURATE.products[i].image}" alt="">
                       <div class="ICON">
-<i class="fa-solid fa-cart-plus FATURATED" onclick='ITI(${JSON.stringify(DATAFATURATE.products[i])})'" id="Cart_ICON" ></i>
+<i class="fa-solid fa-cart-plus FATURATED" onclick='ITI(${JSON.stringify(DATAFATURATE.products[i])})' id="Cart_ICON"></i>
 
                           <i class="fa-regular fa-heart" id="HAERT-ICON"></i>
                       </div>

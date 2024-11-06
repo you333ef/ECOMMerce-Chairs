@@ -654,8 +654,8 @@ transition-property: 0;
 }.HektoTYTLE{
     font-size: 26px;
 }
-.EMPTY{
-    width: 700px !important;
+#EMPTY{
+    width: 800px !important;
     margin: auto;
 }
 .Back{
@@ -664,7 +664,7 @@ transition-property: 0;
 }
 
 @media(max-width:770px){
-    .EMPTY{
+    #EMPTY{
         width: 850px !important;
         height: auto;
         margin: auto;

@@ -28,9 +28,9 @@ window.onload = function() {
     if (ARRAY.length === 0) {
         document.getElementById('NONA').style.display = 'none';
         document.getElementById('SOSTA').innerHTML += `
-            <section class="error-section text-center d-flex flex-column justify-content-center align-items-center vh-50">
+            <section class="error-section text-center d-flex flex-column justify-content-center align-items-center vh-10">
                 <div class="container"style="display: flex; flex-direction: column;" >
-                    <img src="./Trending/Group 123.svg" alt="Error Image" class="img-fluid mb-2 EMPTY" >
+                    <img src="./Trending/Group 123.svg" alt="Error Image" class="img-fluid mb-2 EMPTY" id="EMPTY">
                     <a href="./main.html" class="btn Back">Back To Home</a>
                 </div>
             </section>
