@@ -528,3 +528,15 @@ color: #151875;
         justify-content: center;
     }
 }
+@media (max-width: 1024px) {
+    .about-title,
+    .breadcrumb-content {
+      text-align: start !important;
+    }
+  }
+  .about-image{
+    width: 80%;
+  }
+  #OOK{
+    margin-top: 100px !important;
+  }

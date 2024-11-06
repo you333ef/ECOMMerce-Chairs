@@ -296,7 +296,7 @@ nav.navbar {
 
 }
 /* تنسيق الـ Header */
-header {
+header{
     background-color: #f5f5fc;
   }
   #head {
@@ -362,7 +362,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: ;
+  
 }
 .smallse{
     display: flex;
@@ -398,13 +398,11 @@ header {
     gap: 5px;
     background-color: #F6F5FF;
 }
-
 .JJOi {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-
 .current-page {
     color: #ff4081;
     font-weight: bold;
@@ -556,3 +554,10 @@ header {
         display: none;
     }
 }
+@media (max-width: 1024px) {
+    .about-title,
+    .breadcrumb-content {
+      text-align: start !important;
+    }
+  }
+  
