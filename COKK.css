@@ -655,12 +655,21 @@ transition-property: 0;
     font-size: 26px;
 }
 .EMPTY{
-    width: 850px !important;
+    width: 700px !important;
     margin: auto;
 }
+.Back{
+    width: 200px;
+    margin: auto;
+}
+
 @media(max-width:770px){
     .EMPTY{
         width: 850px !important;
+        margin: auto;
+    }
+    .Back{
+        width: 200px;
         margin: auto;
     }
 
