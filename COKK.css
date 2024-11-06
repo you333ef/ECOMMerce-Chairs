@@ -666,10 +666,11 @@ transition-property: 0;
 @media(max-width:770px){
     .EMPTY{
         width: 850px !important;
+        height: auto;
         margin: auto;
     }
     .Back{
-        width: 200px;
+        width: 150px !important;
         margin: auto;
     }
 
