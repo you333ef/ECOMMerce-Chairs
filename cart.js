@@ -29,8 +29,8 @@ window.onload = function() {
         document.getElementById('NONA').style.display = 'none';
         document.getElementById('SOSTA').innerHTML += `
             <section class="error-section text-center d-flex flex-column justify-content-center align-items-center vh-50">
-                <div class="container">
-                    <img src="./Trending/Group 123.svg" alt="Error Image" class="img-fluid mb-4" style="min-width: 320px;">
+                <div class="container"style="display: flex; flex-direction: column;" >
+                    <img src="./Trending/Group 123.svg" alt="Error Image" class="img-fluid mb-2 EMPTY" >
                     <a href="./main.html" class="btn Back">Back To Home</a>
                 </div>
             </section>

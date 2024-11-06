@@ -646,3 +646,22 @@ transition-property: 0;
         align-items: center;
     }
 }
+.swiper-slide {
+    will-change: transform;
+}
+.nav-item a{
+    font-weight: 700;
+}.HektoTYTLE{
+    font-size: 26px;
+}
+.EMPTY{
+    width: 850px !important;
+    margin: auto;
+}
+@media(max-width:770px){
+    .EMPTY{
+        width: 850px !important;
+        margin: auto;
+    }
+
+}
