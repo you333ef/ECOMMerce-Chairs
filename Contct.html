@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap-4.0.0-dist (1)/css/bootstrap.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./contact.css">
     <title>Conatct</title>
 </head>
@@ -14,7 +16,7 @@
             <div class="row" id="RR">
                 <div class="LL" id="Logout" style="cursor: pointer;"><i class="fa-regular fa-user" ></i> Logout</div>
                
-                <div class="LL"><i class="fa-solid fa-cart-shopping" id="CArtIcon"></i></div>
+                <div class="LL" id="CArtIcon"><i class="fa-solid fa-cart-shopping"></i> <small id="inner"></small></div>
                 <small id="inner"></small>
             </div>
         </div>
@@ -35,18 +37,17 @@
                     <li class="nav-item">
                         <a class="nav-link active text-pink text-center" href="./main.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center" href="#">Pages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center" href="#">Products</a>
-                    </li>
+                    
+                    
                     <li class="nav-item">
                         <a class="nav-link text-center" href="./About.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="#">Contact</a>
+                        <a class="nav-link text-center" href="./Contct.html">Contact</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-center" href="#" id="Soon">Coming Soon</a>
+                  </li>
                 </ul>
     
                 <!-- Search Form -->
@@ -273,10 +274,56 @@
 
 
 
-
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./bootstrap-4.0.0-dist (1)/js/jquery-3.7.1.min.js"></script>
     <script src="./bootstrap-4.0.0-dist (1)/js/popper.min.js"></script>
     <script src="./bootstrap-4.0.0-dist (1)/js/bootstrap.js"></script>
+    <script>
+
+document.getElementById('Soon').onclick = function() {
+    Swal.fire({
+        title: '🚧 We are currently working on this section!',
+        text: 'Stay tuned, it will be available soon.',
+        icon: 'info',
+        timer: 3000,  // الوقت بالمللي ثانية (3000 = 3 ثواني)
+        showConfirmButton: false,  // يخفي زر التأكيد
+        background: '#F2F0FF'
+    });
+}
+
+document.getElementById('HektoTYTLE').onclick=function(){
+    window.location.href='./main.html'
+
+}
+document.getElementById('Logout').addEventListener('click', function () {
+    Swal.fire({
+        title: 'Do you really want to log out?',
+        text: 'Are you sure?' ,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No',
+        confirmButtonColor: '7E33E0',
+        cancelButtonColor: '#FB2E86',
+        background: '#F2F0FF'
+    }).then((result) => {
+        if (result.isConfirmed) {
+           
+            window.location.href = './Fast.html'; 
+        }
+    });
+});
+function YALLA(){
+  let ARRAY=JSON.parse(localStorage.getItem('DATA'))||[]
+    let inner = document.getElementById('inner');
+    inner.innerHTML = ARRAY.length; 
+ } YALLA()
+document.getElementById('CArtIcon').onclick=function(){
+  window.location.href='./CART.html'
+
+  
+}
+    </script>
     
 </body>
 </html>

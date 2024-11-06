@@ -126,10 +126,6 @@ function FUN(element) {
 
 
 
-
-
-
-
  
   
  
@@ -629,4 +625,15 @@ document.getElementById('Logout').addEventListener('click', function () {
         }
     });
 });
+
+document.getElementById('Soon').onclick = function() {
+    Swal.fire({
+        title: '🚧 We are currently working on this section!',
+        text: 'Stay tuned, it will be available soon.',
+        icon: 'info',
+        timer: 3000,  // الوقت بالمللي ثانية (3000 = 3 ثواني)
+        showConfirmButton: false,  // يخفي زر التأكيد
+        background: '#F2F0FF'
+    });
+}
 

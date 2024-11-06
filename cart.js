@@ -206,3 +206,14 @@ document.getElementById('Logout').addEventListener('click', function () {
     });
 });
 
+document.getElementById('Soon').onclick = function() {
+    Swal.fire({
+        title: '🚧 We are currently working on this section!',
+        text: 'Stay tuned, it will be available soon.',
+        icon: 'info',
+        timer: 3000, 
+        showConfirmButton: false, 
+        background: '#F2F0FF'
+    });
+}
+
