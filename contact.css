@@ -349,3 +349,210 @@ header {
 }
 
 /* END Navbar */
+#right-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#right-contact{
+    display: flex;
+    flex-direction: row;
+}
+.polets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: ;
+}
+.smallse{
+    display: flex;
+    flex-direction: column;
+}
+.about-header {
+    background-color: #F6F5FF;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 100%; /* جعل الخلفية بعرض الشاشة */
+}
+
+.about-container {
+    /* يمكنك إضافة تنسيقات إضافية هنا إذا لزم الأمر */
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #F6F5FF;
+    color: #1d1b49;
+    text-align: left; /* عرض العنوان على اليسار */
+}
+
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #888;
+    font-size: 14px;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 5px;
+    background-color: #F6F5FF;
+}
+
+.JJOi {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.current-page {
+    color: #ff4081;
+    font-weight: bold;
+}
+
+/* للريسبونزف */
+@media (max-width: 990px) {
+    .about-title {
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .JJOi {
+        font-size: 12px;
+        justify-content: center;
+    }
+}
+/* NEW */
+
+  
+.information h4 {
+    color: #3b3b3b;
+    font-weight: bold;
+}
+
+.information p {
+    color: #5c5c5c;
+}
+
+.color-icons img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.lweft small,
+.rigt small {
+    color: #8A8FB9;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+#left-contact {
+    margin-bottom: 20px;
+}
+
+#sqlp {
+    display: flex;
+    flex-direction: row;
+}
+
+/* الميديا كويري للأجهزة من 320px إلى 1024px */
+@media (min-width: 320px) and (max-width: 1024px) {
+    #left-contact {
+        order: 1;
+    }
+    #right-contact {
+        order: 2;
+    }
+    .information h4,
+    .information p,
+    .information ,
+    .lweft,
+    #right-contact {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .color-icons{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    #left-contact{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        margin: auto;
+    }
+}
+
+/*  */
+/* عنوان السكشن */
+
+  
+  /* وصف السكشن */
+  .section-description {
+    color: #5c5c5c;
+    margin-bottom: 20px;
+  }
+  
+  /* الفورم */
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-submit {
+    background-color: #ff5e78;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .image-section {
+    margin-top: 20px;
+  }
+  
+  /* ريسبونزف للشاشات الصغيرة والمتوسطة */
+  @media (max-width: 990px) {
+    .image-section {
+      order: 1;
+    }
+    .text-form-section {
+      order: 2;
+      margin-top: 20px;
+    }
+    .section-title,.section-description,#b00eo {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+      }
+      #mowana{
+        margin-top: 100px !important;
+      }
+  }
+@media(min-width:770px) and (max-width:990px){
+    .containerrrr{
+        display: none;
+    }
+}

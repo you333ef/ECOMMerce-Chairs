@@ -511,15 +511,10 @@ color: #151875;
     gap: 5px;
    
 }
-
-
-
-
 .current-page {
     color: #ff4081;
     font-weight: bold;
 }
-
 /* للريسبونزف */
 @media (max-width: 990px) {
     .about-title {
