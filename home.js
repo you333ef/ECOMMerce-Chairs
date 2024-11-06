@@ -140,24 +140,26 @@ function FUN(element) {
 
 // Initialize Swiper for product carousels on page load
 window.onload = function () {
-  var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-          576: { slidesPerView: 2, spaceBetween: 20 },
-          768: { slidesPerView: 2, spaceBetween: 30 },
-          1024: { slidesPerView: 4, spaceBetween: 40 },
-      },
-  });
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        lazy: true, // تفعيل تحميل الصور الكسول
+        breakpoints: {
+            576: { slidesPerView: 2, spaceBetween: 10 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 30 },
+        },
+    });
+    
 };
 
 
@@ -545,14 +547,11 @@ fetch('./ACSESS.json')
       // Loop through accessories data and generate HTML content
       for (let i = 0; i < CATEDATA.length; i++) {
           TOTo += `
-              <div class="swiper-slide"> 
-                  <div class="product-card text-center p-3"> 
+              <div class="swiper-slide" > 
+                  <div class="product-card text-center " > 
                       <div class="img-part position-relative"> 
-                          <img src="${CATEDATA[i].image}" class="img-fluid"> 
-                          <div class="ICON position-absolute" style="top: 10px; left: 10px;"> 
-                              <i class="fa-solid fa-cart-plus" id="Cart_ICON"></i> 
-                              <i class="fa-regular fa-heart ms-2" id="HAERT-ICON"></i> 
-                          </div> 
+                          <img src="${CATEDATA[i].image}" class="product-imageeee"  > 
+                        
                       </div> 
                       <h5 class="mt-3">${CATEDATA[i].name}</h5> 
                       <p>$${CATEDATA[i].price}</p> 

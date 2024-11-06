@@ -415,4 +415,7 @@ footer{
         position: sticky;
         top: 0;
         width: 100%;
-    }    
+    }
+    #SIGNFAST{
+        background-color:#FB2E86 !important;
+    }
